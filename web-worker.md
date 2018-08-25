@@ -4,7 +4,7 @@
 - Client-side JS functions must not run too long, or it will tie up the event loop and the web browser will be unresponsive to the user input.
 
 ## Web workers
-
+![](http://webworkers.tompascall.com/img/worker-events.png)
 ### Introduction
 Web worker is a workaround for multi-thread programming. </br>
 It defines a 'worker' as _parallel threads_ of execution. </br>
@@ -45,14 +45,14 @@ worker.onmessage = function (e) {
 ```javascript
 importScripts('collections/Set.js', 'collections/Map.js',);
 ```
-  - It is synchronous, it does not return until all scripts loaded and executed.
-  - It may cause dependency cycles.
+  - It is _synchronous_, it does not return until all scripts loaded and executed.
+  - It may cause **dependency cycles**.
 
 Other properties in `WorkerGlobalScope` :
 - properties of the core JS global object, such as `JSON`, `isNaN()` and `Date()`.
 - timer methods like `setTimeout()`, `setInterval()` ...
-- `location` property that describes the URL that was passed to the `Worker()`: `herf, protocol, host, port, search, hash ... `
-- `navigator` : `appVersion, platform, appName ....`
+- `location`: describes the URL that was passed to `Worker()`: `herf`, `protocol`, `host`, `port`, `search`, `hash` ... 
+- `navigator` : `appVersion, platform, appName ...`
 - important client side constructor objects like `XMLHttpRequest()`  ... 
 
 ### Example
