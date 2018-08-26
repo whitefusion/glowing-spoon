@@ -1,11 +1,11 @@
-## Background
+# Background
 - Javascript is **single-threaded**: a browser will never run two event handlers at the same time.
 - No need to worry about locks, dead-locks or race conditions. 
 - Client-side JS functions must not run too long, or it will tie up the event loop and the web browser will be unresponsive to the user input.
 
-## Web workers
+# Web workers
 ![](http://webworkers.tompascall.com/img/worker-events.png)
-### Introduction
+## Introduction
 Web worker is a workaround for multi-thread programming. </br>
 It defines a 'worker' as _parallel threads_ of execution. </br>
 Web workers live in a **self-contained** execution enviroment. </br>
@@ -14,12 +14,12 @@ It can only communicate with main thread via __async message__ passing. </br>
 No access to Documnet or Window object </br>
 If you send message to a closed worker, the message will be discarded silently without raising an error.
 
-### Compositions
+## Compositions
 There are two pieces to the Web Worker specification. </br>
 **Worker object**: this is a worker looks like from the outside, the the thread that creates it. </br>
 **WorkerGlobalScope**: this is the _global_ object for a new worker, it is what a woker thread looks like inside.
 
-##### Worker Object
+### Worker Object
 - `Worker()` :  constructor. 
 ```javascript
 var loader = new Worker("utils/loader.js");
@@ -37,7 +37,7 @@ worker.onmessage = function (e) {
 ```
 - `terminate()`: force a worker thread to stop running
 
-##### Worker Scope
+### Worker Scope
 - `postMessage()`: send message outside the worker
 - `onmessage()`: listen on message from the outside
 - `close()`: allow a worker to terminate itself
@@ -52,7 +52,8 @@ Other properties in `WorkerGlobalScope` :
 - properties of the core JS global object, such as `JSON`, `isNaN()` and `Date()`.
 - timer methods like `setTimeout()`, `setInterval()` ...
 - `location`: describes the URL that was passed to `Worker()`: `herf`, `protocol`, `host`, `port`, `search`, `hash` ... 
-- `navigator` : `appVersion, platform, appName ...`
+- `navigator` : `appVersion`, `platform`, `appName` ...
 - important client side constructor objects like `XMLHttpRequest()`  ... 
+- ~~console~~ : might need to make use of message type when debugging
 
-### Example
+## Example
