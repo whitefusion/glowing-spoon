@@ -57,3 +57,8 @@ Other properties in `WorkerGlobalScope` :
 - ~~console~~ : might need to make use of message type when debugging
 
 ## Example
+Main thread vs Web worker : find prime numbers. 
+
+## Reference
+1. Wikipedia: [Web Worker](https://en.wikipedia.org/wiki/Web_worker)
+2. Javascript: the definitive guide, 5th edition.
