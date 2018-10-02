@@ -180,3 +180,27 @@ The `<figcaption>` element has been added to HTML5 in order to allow web page au
 <figcaption>...</figcaption>
 </figure>
 ```
+
+# Tables 
+## BASIC TABLE STRUCTURE
+- `<table>`: the contens of the table are written out row by row.
+- `<tr>`: start and end of a table row.
+- `<td>`: represent a table cell.
+
+## TABLE HEADINGS
+The `<th>` element is used just like the `td` element but its purpose is to represent the heading for either a column or a row. <br>
+Even if a cell has no content, you should still use a `<td>` or `<th>` to represent the presence of an empty cell otherwise the table will not render correctly. <br>
+You can use the `scope` attribute attribute on the `<th>` element to indicate whether it is a heading for a column or a row. It can take value 'row' or 'column'.
+
+## SPANNING COLUMNS OR ROWS
+The `colspan` attribute can be used on a `<th>` or `<td>` element and indicates how many columns that cell should run across. <br>
+Using `rowspan` attribute in `<td>` to achieve row span. 
+
+## LOND TABLES
+- `<thead>`
+- `<tbody>`
+- `<tfoot>`
+Part of the reason for having separate `<thead>` and `tfoot` elements is so that, if you have a table that is taller than the screen (or if printed, longer than one page) then the browser can keep the header and footer visible whilst the contents of the table scroll. This is intended to make it easier for users to see which column the data is in. 
+
+# FORMS
+## FORM CONTROLS
