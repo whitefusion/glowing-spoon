@@ -143,6 +143,7 @@ export class AppComponent implements  AfterViewInit {
 ```
 
 ![output4][5]
+
 Let's try open the color picker when the color sample gets clicked.  <br>
 ```ts
 <h2 #title>Choose Brand Colors:</h2>
