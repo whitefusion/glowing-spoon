@@ -208,24 +208,24 @@ Another way you can affect the ordering of grid items is by using the `order` pr
 Meyer, Eric A.; Weyl, Estelle. CSS: The Definitive Guide. 
 
 
-[terminology]: ./basic_component.png
-[grid_container]: ./grid_container.png
-[create_gridline]: ./create_gridline.png
-[flexible_gridline]:./flexible_gridline.png
-[content_aware_gridline]:./content_aware_gridline.png
-[repeat_gridline]:./repeat_gridline.png
-[auto_fill_track]:./auto_fill_track.png
-[grid_area_id]: ./grid_area_id.png
-[attach_element]: ./attach_element.png
-[implicit_grid]: ./implicit_grid.png
-[using_area]:./using_area.png
-[grid_item_overlap]:./grid_item_overlap.png
-[grid_auto_flow_row]: ./grid_auto_flow_row.png
-[grid_auto_flow_col]: ./grid_auto_flow_col.png
-[flow_pattern]:./flow_pattern.png
-[dense_flowe]:./dense_flow.png
-[grid_gutter]:./grid_gutter.png
-[align_grid]:./align_grid.png
-[overlap_source_order]:./overlap_source_order.png
-[overlap_ordered]:./overlap_ordered.png
+[terminology]: ./grid/basic_component.png
+[grid_container]: ./grid/grid_container.png
+[create_gridline]: ./grid/create_gridline.png
+[flexible_gridline]:./grid/flexible_gridline.png
+[content_aware_gridline]:./grid/content_aware_gridline.png
+[repeat_gridline]:./grid/repeat_gridline.png
+[auto_fill_track]:./grid/auto_fill_track.png
+[grid_area_id]: ./grid/grid_area_id.png
+[attach_element]: ./grid/attach_element.png
+[implicit_grid]: ./grid/implicit_grid.png
+[using_area]:./grid/using_area.png
+[grid_item_overlap]:./grid/grid_item_overlap.png
+[grid_auto_flow_row]: ./grid/grid_auto_flow_row.png
+[grid_auto_flow_col]: ./grid/grid_auto_flow_col.png
+[flow_pattern]:./grid/flow_pattern.png
+[dense_flowe]:./grid/dense_flow.png
+[grid_gutter]:./grid/grid_gutter.png
+[align_grid]:./grid/align_grid.png
+[overlap_source_order]:./grid/overlap_source_order.png
+[overlap_ordered]:./grid/overlap_ordered.png
 
