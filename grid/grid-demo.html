@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #grid1{
+            display: grid;
+            grid-template-areas: 
+                "header header header header"
+                "leftside content content rightside"
+                "leftside footer footer footer";
+            border: 1px solid gray;
+        }
+        #masthead { grid-area: header; border: 1px solid goldenrod }
+        #sidebar { grid-area: leftside; border: 1px solid rebeccapurple;}
+        #main { grid-area: content; border: 1px solid salmon; }
+        #navbar { grid-area: rightside; border: 1px solid palegreen; }
+        #footer { grid-area: footer; border: 1px solid cadetblue;}
+        #grid2 {
+            display: grid;
+            grid-template-rows: 80px 80px;
+            grid-template-columns: 80px 80px;
+            list-style-type: none;
+            grid-auto-rows: 80px;
+            grid-auto-columns: 80px;
+        }
+        .list-item {
+            border: 1px solid brown;
+            justify-self: center;
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="grid1">
+        <div id="masthead"> masthead </div>
+        <div id="main"> main </div>
+        <div id="navbar"> navbar</div>
+        <div id="sidebar"> sidebar </div>
+        <div id="footer"> footer </div>
+    </div>
+    <ul id="grid2">
+        <li class="list-item" id="l1">1</li>
+        <li class="list-item" id="l2">2</li>
+        <li class="list-item" id="l3">3</li>
+        <li class="list-item" id="l4">4</li>
+        <li class="list-item" id="l5">5</li>
+    </ul>
+</body>
+</html>
