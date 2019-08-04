@@ -213,19 +213,19 @@ Meyer, Eric A.; Weyl, Estelle. CSS: The Definitive Guide.
 [create_gridline]: ./create_gridline.PNG
 [flexible_gridline]:./flexible_gridline.PNG
 [content_aware_gridline]:./content_aware_gridline.PNG
-[repeat_gridline]:./repeat_gridline.png
-[auto_fill_track]:./auto_fill_track.png
-[grid_area_id]: ./grid_area_id.png
-[attach_element]: ./attach_element.png
-[implicit_grid]: ./implicit_grid.png
-[using_area]:./using_area.png
-[grid_item_overlap]:./grid_item_overlap.png
-[grid_auto_flow_row]: ./grid_auto_flow_row.png
-[grid_auto_flow_col]: ./grid_auto_flow_col.png
-[flow_pattern]:./flow_pattern.png
-[dense_flowe]:./dense_flow.png
-[grid_gutter]:./grid_gutter.png
-[align_grid]:./align_grid.png
-[overlap_source_order]:./overlap_source_order.png
-[overlap_ordered]:./overlap_ordered.png
+[repeat_gridline]:./repeat_gridline.PNG
+[auto_fill_track]:./auto_fill_track.PNG
+[grid_area_id]: ./grid_area_id.PNG
+[attach_element]: ./attach_element.PNG
+[implicit_grid]: ./implicit_grid.PNG
+[using_area]:./using_area.PNG
+[grid_item_overlap]:./grid_item_overlap.PNG
+[grid_auto_flow_row]: ./grid_auto_flow_row.PNG
+[grid_auto_flow_col]: ./grid_auto_flow_col.PNG
+[flow_pattern]:./flow_pattern.PNG
+[dense_flowe]:./dense_flow.PNG
+[grid_gutter]:./grid_gutter.PNG
+[align_grid]:./align_grid.PNG
+[overlap_source_order]:./overlap_source_order.PNG
+[overlap_ordered]:./overlap_ordered.PNG
 
