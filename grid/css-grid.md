@@ -224,7 +224,7 @@ Meyer, Eric A.; Weyl, Estelle. CSS: The Definitive Guide.
 [grid_auto_flow_col]: ./grid_auto_flow_col.PNG
 [flow_pattern]:./flow_pattern.PNG
 [dense_flow]:./dense_flow.PNG
-[grid_gutter]:./grid_gutter.PNG
+[grid_gutter]:./Grid_Gutter.PNG
 [align_grid]:./align_grid.PNG
 [overlap_source_order]:./overlap_source_order.PNG
 [overlap_ordered]:./overlap_ordered.PNG
