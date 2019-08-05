@@ -198,7 +198,7 @@ Much Similar to flex box.
 ![align_grid]
 
 ### Layering and Ordering
-By default, the grid items will visually overlap in document source order: grid items later in the document source will appear in front of   grid items earlier in the document source.
+By default, the grid items will visually overlap in document source order: grid items later in the document source will appear in front of grid items earlier in the document source.
 
 Another way you can affect the ordering of grid items is by using the `order` property. Its effect is essentially the same as it is in flexbox — you can change the order of grid items within a grid track by giving them order values. This affects not only placement within the track, but also __paint order__ if they should overlap.
 
@@ -223,7 +223,7 @@ Meyer, Eric A.; Weyl, Estelle. CSS: The Definitive Guide.
 [grid_auto_flow_row]: ./grid_auto_flow_row.PNG
 [grid_auto_flow_col]: ./grid_auto_flow_col.PNG
 [flow_pattern]:./flow_pattern.PNG
-[dense_flowe]:./dense_flow.PNG
+[dense_flow]:./dense_flow.PNG
 [grid_gutter]:./grid_gutter.PNG
 [align_grid]:./align_grid.PNG
 [overlap_source_order]:./overlap_source_order.PNG
