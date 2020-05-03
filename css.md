@@ -130,3 +130,94 @@ Inline Formatting Context
 
 ### 产生条件
 块级元素中仅包含内联级别元素， 注意当IFC中由块级元素插入时，会产生两个匿名块将父元素分割开来，产生两个IFC。
+
+### 渲染规则
+* 子元素水平横向排列，垂直方向起点为顶部。
+* 子元素只会计算横向样式空间，（padding， margin，border），垂直方向不会计算
+* 在垂直方向上，子元素会以不同形式来对齐
+* 能把在一行上的框都完全包含进去的一个矩形区域，被称作行框。行框的宽度是由包含块（containing box）和其中的浮动来决定。
+* IFC中的“line box”一般左右边贴紧其包含块，但float元素会优先排列。
+* IFC中的“line box”高度由css行高计算规则来确定，同个IFC下的多个line box高度可能会不同。
+* 当inline-level boxes的总宽度少于包含他们的line box时，其水平渲染规则由text-align属性值来决定
+* 当一个inline box超过父元素的宽度时，他会被分割成多个boxes，这些boxes分布在多个line box中。如果子元素未设置强制换行，inline-box 不可被分割，会溢出父元素。
+
+### IFC应用
+* 水平居中： 当一个块要在环境水平居中时，设置其为inline-block则会在外层产生IFC，通过text-align则可以使其水平居中
+* 垂直居中：创建一个IFC，用其中一个元素撑开父元素高度，然后设置其vertical-align：middle，其他行内元素则可以在此父元素下 垂直居中。
+
+## FFC
+Flex formatting context
+
+### 生成条件
+父元素设置display：flex或者inline-flex
+
+### 渲染规则
+http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html
+
+### FFC的应用
+1. 自动撑开页面高度，底栏总是出现在页面的底部
+```html
+
+<style>
+.wrap{
+    display:flex;
+    padding:0;
+    margin:0;
+    min-height:100vh;
+    flex-direction:column;
+}
+.main{
+    flex-grow:1;
+}
+</style>
+<body class="wrap">
+    <header style="line-height:50px;background:red;color:#fff;text-align:center">头部</header>
+    <main class="main">内容</main>
+    <footer style="line-height:50px;background:#eeeeee;color:#333;text-align:center">底栏</footer>
+</body>
+```
+
+### 经典的圣杯布局
+```html
+<style>
+.wrap {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    flex-direction: column;
+}
+header,
+footer {
+    flex: 0 0 50px;
+}
+
+.content {
+    display: flex;
+    flex: 1
+}
+
+.main {
+    flex: 1;
+}
+.nav,
+.ads{
+    flex: 0 0 100px;
+    background:green;
+}
+.nav{
+    order:-1;
+    background:yellow;
+}
+</style>
+<body class="wrap">
+    <header style="line-height:50px;background:red;color:#fff;text-align:center">头部</header>
+    <div class="content">
+        <main class="main">内容区</main>
+        <nav class="nav">侧边导航</nav>
+        <aside class="ads">侧边栏</aside>
+    </div>
+    <footer style="line-height:50px;background:#eeeeee;color:#333;text-align:center">底栏</footer>
+</body>
+```
+
