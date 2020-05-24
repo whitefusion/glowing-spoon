@@ -221,3 +221,28 @@ footer {
 </body>
 ```
 
+## 元素居中
+
+### 使用margin进行固定长度的偏移
+使用margin进行高度偏移时 需要知道父元素和子元素的宽高
+
+- 水平方向 ： margin： auto
+- 垂直方向 ： margin-top进行下移 
+
+### 使用绝对定位进行偏移
+
+首先要将父元素设置 position: relative ， 子元素 position：absolute，然后使用left， top实现居中。
+
+这种方法需要明确子元素的尺寸。
+
+### 使用绝对定位并margin自适应进行居中
+父元素position：relative，子元素position：absolute， left/top/bottom/right： 0， 然后margin： auto
+这种居中方式是流体自适应居中，不需要知道父子元素的具体尺寸。
+
+### 使用table-cell进行居中 
+将父元素display：table-cell， 此时可以使用vertical-align：middle对内部子元素进行垂直居中 ， 之后子元素：margin： 0 auto实现水平居中
+
+### 弹性盒子
+display：flex， xy-center
+
+
